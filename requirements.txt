@@ -1,7 +1,7 @@
-crispy_forms
+# crispy_forms
 django_cleanup
 facenet_pytorch
-PIL
+# PIL
 numpy
 sklearn
 torch

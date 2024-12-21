@@ -8,7 +8,7 @@ from apps.user_profile.views import *
 
 urlpatterns = [
     path('', RedirectView.as_view(), name='redirect'),
-    path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
+    path('logout/', logout_handler, name='logout'),
     path('admin/', admin.site.urls, name='admin'),
 
     path('no_permission/', NoPermission.as_view(), name='no_permission'),
